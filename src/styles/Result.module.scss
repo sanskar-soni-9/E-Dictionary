@@ -1,0 +1,100 @@
+@import "./config.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 1.25rem;
+
+  div {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: $violet-color;
+    }
+  }
+
+  .playBtn {
+    color: $violet-color;
+    background-color: $light-violet;
+    border-radius: 50%;
+    padding: 10px 9px 10px 11px;
+    cursor: pointer;
+  }
+}
+
+.subHeading {
+  color: $medium-gray;
+  font-size: 0.98rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.main {
+  margin: 0 1rem 1.25rem;
+
+  .partOfSpeech {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 1.25rem;
+    align-items: center;
+
+    .line {
+      width: 100%;
+      height: 0;
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+  
+
+  ul {
+    margin: 0.75rem 2rem 2rem;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 0.75rem;
+      
+      &:before {
+        content: "•";
+        color: $violet-color;
+        margin-left: -1rem;
+        margin-right: 0.75rem;
+        width: 1rem;
+      }
+    }
+  }
+  
+  .antonyms {
+    margin-bottom: 1rem;
+  }
+
+  .valueItems {
+    color: $violet-color;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
+
+.footer {
+  margin: 0 1rem 2rem;
+  border-top: 1px solid $light-gray;
+  padding-top: 0.5rem;
+
+  .subHeading {
+    font-size: 0.65rem;
+
+    a {
+      padding-left: 1rem;
+      color: $dark-gray;
+      text-decoration: underline;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+}

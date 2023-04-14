@@ -1,0 +1,23 @@
+@import "./config.scss";
+
+.wrapper {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  font-family: sans-serif;
+
+  .container {
+    width: $max-width;
+    padding: 2rem 10px;
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

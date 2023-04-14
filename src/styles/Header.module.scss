@@ -1,0 +1,99 @@
+@import "./config.scss";
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .brandIcon {
+    margin-right: auto;
+    color: $gray-color;
+    cursor: pointer;
+  }
+
+  select {
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .toggleMode {
+    cursor: pointer;
+    height: 14px;
+    display: flex;
+    align-items: center;
+
+    span {
+      position: relative;
+      display: inline-block;
+      width: 28px;
+      height: 14px;
+      background-color: $gray-color;
+      border-radius: 14px;
+      margin-right: 1rem;
+      transition: all 0.3s ease-out;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 2px;
+        left: 2px;
+        background-color: $white-color;
+        border-radius: 100%;
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked {
+        background-color: $black-color;
+      }
+
+      &:checked + span {
+        background-color: $violet-color;
+
+        &:after {
+          left: 16px;
+        }
+      }
+    }
+  }
+
+  .modeIcons {
+    color: $gray-color;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+.searchLabel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  color: inherit;
+
+  input {
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: inherit;
+  }
+
+  .searchBtn {
+    position: absolute;
+    top: 15px;
+    right: 8%;
+    color: $violet-color;
+    cursor: pointer;
+  }
+}
