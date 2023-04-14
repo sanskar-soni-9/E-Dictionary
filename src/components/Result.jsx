@@ -16,7 +16,7 @@ const Result = ({ data }) => {
       this.removeEventListener("canplaythrough", addAudio);
     })
     return (() => setAudio(null));
-  }, [data])
+  }, [audioURL])
 
   return (
     <>
